@@ -1,19 +1,21 @@
-# BitPrint
+# BitPrint: Print your Bitwarden vault
 
-**BitPrint** turns an [exported Bitwarden vault](https://help.bitwarden.com/article/export-your-data/) into a layout designed to be printed. Processing is handled client side.
+**BitPrint** is a React app which turns an [exported Bitwarden vault](https://help.bitwarden.com/article/export-your-data/) into a tabular layout designed to be printed. Processing is handled within the browser.
 
-I would not recommend using this for personal use. I made this for myself, more as of a proof of concept rather than something meant to be shared. Always be cautious when dealing with your exported vault.
+This was designed primarily as a proof of concept, and using it with your personal data is **not recommended**. Be cautious when handling your exported vault data, and **do not share it with anyone**.
 
-**TL;DR: Do not import your personal vault on my site. Use the [demo](https://bitprint.kmr.io/?demo), your own fake data, or fork the repo and run it yourself.**
+In short, **absolutely do not** import your personal vault on the demo site. Instead, clone this repository and run the application locally.
 
 ![Screenshot](.github/screenshot.png)
 
 ## Requirements
 
-- Node 10.x
-- npm 7
+- Node.js 16
+- npm 8
 
 ## Quick Start
+
+Install [Node.js](https://nodejs.org/en/download/package-manager) if you don't have it already.
 
 ```
 $ npm install
@@ -22,28 +24,20 @@ $ npm start
 
 Navigate to http://localhost:3000.
 
+### How do I get my vault export?
+
+Follow the instructions at [Export Vault Data – Bitwarden Help Center](https://help.bitwarden.com/article/export-your-data/). Download either the CSV or unencrypted JSON format.
+
+This file contains all of your passwords and secrets, and could be jeopardized by a compromised machine, network, or printer. Take care to delete it when finished.
+
 ## Development
-
-**Features**
-
-- React 16, Express 4, and Tailwind CSS
-- Prettier with Husky enabled on pre-commits
-
-**Setup Project**
-
-- Installs dependencies for the **Client**.
-- Creates an .env file with defaults if one doesn't exist.
-
-```
-$ yarn setup
-```
 
 **Start development server**
 
 - **Client:** http://localhost:3000
 
 ```
-$ yarn start
+$ npm start
 ```
 
 ## Environment Variables
@@ -51,12 +45,6 @@ $ yarn start
 Located in the [.env](.env) file. Follow [.env.example](.env.example) as an example.
 
 ## Production
-
-**Setup Project**
-
-```
-$ yarn setup
-```
 
 **Build Client**
 
@@ -70,6 +58,6 @@ $ yarn build
 $ yarn serve
 ```
 
-## How do I get my vault export?
+# License
 
-[help.bitwarden.com/article/export-your-data/](https://help.bitwarden.com/article/export-your-data/)
+MIT
