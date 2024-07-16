@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import Context, { initialContext } from './context/index.js';
+import Context, { initialContext } from './context/index.ts';
 
-import Header from './components/Header.jsx';
-import Intro from './components/Intro.jsx';
-import Print from './components/Print.jsx';
-import Footer from './components/Footer.jsx';
+import Header from './components/Header.tsx';
+import Intro from './components/Intro.tsx';
+import Print from './components/Print.tsx';
+import Footer from './components/Footer.tsx';
 
 import "./index.css";
 

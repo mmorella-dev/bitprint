@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import classNames from 'classnames';
 import csv from 'csvtojson';
 
-import Context, { initialContext } from '../context/index.js';
+import Context, { initialContext } from '../context/index.ts';
 
 import { ReactComponent as FileImportIcon } from '../assets/file-import.svg';
 import { ReactComponent as PrintIcon } from '../assets/print.svg';

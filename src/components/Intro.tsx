@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Context from '../context/index.js';
+import Context from '../context/index.ts';
 
 import Step1 from '../assets/step-1.png';
 import Step2 from '../assets/step-2.png';
