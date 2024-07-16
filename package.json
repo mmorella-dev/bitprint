@@ -51,6 +51,7 @@
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
+    "@types/react": "^18.3.3",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
     "concurrently": "^5.0.0",
