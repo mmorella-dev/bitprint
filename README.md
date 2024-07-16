@@ -8,12 +8,6 @@ I would not recommend using this for personal use. I made this for myself, more 
 
 ![Screenshot](.github/screenshot.png)
 
-## Demo
-
-- [bitprint.kmr.io/?demo](https://bitprint.kmr.io/?demo) (start here)
-- [bitprint.kmr.io/demo.json](https://bitprint.kmr.io/demo.json) (vault export)
-- [bitprint.kmr.io/demo.pdf](https://bitprint.kmr.io/demo.pdf) (pdf to print)
-
 ## Requirements
 
 - Node 10.x
