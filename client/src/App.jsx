@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 
 import Context, { initialContext } from './context/index.js';
 
-import Header from './components/Header.js';
-import Intro from './components/Intro.js';
-import Print from './components/Print.js';
-import Footer from './components/Footer.js';
+import Header from './components/Header.jsx';
+import Intro from './components/Intro.jsx';
+import Print from './components/Print.jsx';
+import Footer from './components/Footer.jsx';
+
+import "./index.css";
 
 export default class App extends Component {
   state = { ...initialContext };

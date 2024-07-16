@@ -13,7 +13,7 @@
   "scripts": {
     "postinstall": "node tasks/setup.js",
     "start": "dotenv -e .env concurrently \"npm start -w client\"",
-    "build": "dotenv -e .env node tasks/build.js",
+    "build": "dotenv -e .env concurrently \"npm run build -w client\"",
     "serve": "set NODE_ENV=production && dotenv -e .env concurrently \"npm run serve -w client\"",
     "format": "prettier --write '**/*.{css,js,json,md}'"
   },

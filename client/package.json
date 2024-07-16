@@ -8,13 +8,10 @@
   },
   "private": true,
   "scripts": {
-    "start": "npm-run-all -p start:css start:js",
-    "build": "npm-run-all build:css build:js",
-    "start:js": "react-scripts start",
-    "build:js": "react-scripts build",
-    "start:css": "postcss src/index.css -o public/index.min.css -w",
-    "build:css": "postcss src/index.css -o public/index.min.css --env production",
-    "serve": "node serve.js"
+    "start": "vite",
+    "build": "vite build",
+    "serve": "node serve.js",
+    "dev": "vite"
   },
   "browserslist": {
     "production": [
@@ -34,16 +31,19 @@
     "prop-types": "^15.8.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "^5.0.1",
     "serve-handler": "^6.1.2",
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
     "cssnano": "^7.0.4",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.39",
-    "postcss-cli": "^11.0.0"
+    "postcss-cli": "^11.0.0",
+    "vite": "^5.2.13"
   }
 }

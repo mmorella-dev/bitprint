@@ -6,7 +6,7 @@ import Context from '../context/index.js';
 import { ReactComponent as FrownOpenIcon } from '../assets/frown-open.svg';
 import { ReactComponent as PrintIcon } from '../assets/print.svg';
 
-import Logo from './Logo.js';
+import Logo from './Logo.jsx';
 
 export default class Print extends Component {
   static contextType = Context;

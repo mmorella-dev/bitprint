@@ -7,5 +7,6 @@ module.exports = {
   },
   variants: {
     borderColor: ['focus']
-  }
+  },
+  purge: false
 };
