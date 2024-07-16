@@ -7,14 +7,12 @@
     "type": "git",
     "url": "https://github.com/krestaino/bitprint.git"
   },
-  "workspaces": [
-    "client"
-  ],
   "scripts": {
     "postinstall": "node tasks/setup.js",
-    "start": "dotenv -e .env concurrently \"npm start -w client\"",
-    "build": "dotenv -e .env concurrently \"npm run build -w client\"",
-    "serve": "set NODE_ENV=production && dotenv -e .env concurrently \"npm run serve -w client\"",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "dev": "vite",
     "format": "prettier --write '**/*.{css,js,json,md}'"
   },
   "husky": {
@@ -28,13 +26,45 @@
       "git add"
     ]
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "csvtojson": "^2.0.10",
+    "dotenv-expand": "^11.0.6",
+    "prop-types": "^15.8.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "serve-handler": "^6.1.2",
+    "tailwindcss": "^2.2.19"
+  },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
     "concurrently": "^5.0.0",
     "consola": "^2.11.0",
+    "cssnano": "^7.0.4",
     "dotenv-cli": "^3.0.0",
     "execa": "^3.3.0",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
-    "prettier": "^1.19.1"
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^1.19.1",
+    "vite": "^5.2.13"
   }
 }
