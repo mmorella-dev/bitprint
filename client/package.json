@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/krestaino/bitprint.git"
   },
+  "private": true,
   "scripts": {
     "start": "npm-run-all -p start:css start:js",
     "build": "npm-run-all build:css build:js",

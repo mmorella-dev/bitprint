@@ -11,13 +11,13 @@ I would not recommend using this for personal use. I made this for myself, more 
 ## Requirements
 
 - Node 10.x
-- Yarn 1.x
+- npm 7
 
 ## Quick Start
 
 ```
-$ yarn setup
-$ yarn start
+$ npm install
+$ npm start
 ```
 
 Navigate to http://localhost:3000.

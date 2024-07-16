@@ -7,16 +7,15 @@
     "type": "git",
     "url": "https://github.com/krestaino/bitprint.git"
   },
+  "workspaces": [
+    "client"
+  ],
   "scripts": {
-    "format": "prettier --write '**/*.{css,js,json,md}'",
-    "setup": "yarn install && node tasks/setup.js",
-    "setup:client": "yarn --cwd client/ install",
-    "start": "dotenv -e .env concurrently \"yarn start:client\"",
-    "start:client": "yarn --cwd client/ start",
+    "postinstall": "node tasks/setup.js",
+    "start": "dotenv -e .env concurrently \"npm start -w client\"",
     "build": "dotenv -e .env node tasks/build.js",
-    "build:client": "yarn --cwd client/ build",
-    "serve": "set NODE_ENV=production && dotenv -e .env concurrently \"yarn serve:client\"",
-    "serve:client": "yarn --cwd client/ serve"
+    "serve": "set NODE_ENV=production && dotenv -e .env concurrently \"npm run serve -w client\"",
+    "format": "prettier --write '**/*.{css,js,json,md}'"
   },
   "husky": {
     "hooks": {

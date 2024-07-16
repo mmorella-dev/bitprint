@@ -5,7 +5,7 @@ const execa = require('execa');
   // Build Client for production
   try {
     consola.info('Building Client…');
-    execa('yarn', ['build:client']).then(() => consola.success('Client built.'));
+    execa('npm', ['run', 'build', '-w', 'client']).then(() => consola.success('Client built.'));
   } catch (error) {
     consola.error(error);
   }
