@@ -8,7 +8,6 @@
     "url": "https://github.com/krestaino/bitprint.git"
   },
   "scripts": {
-    "postinstall": "node tasks/setup.js",
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview",
