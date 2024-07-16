@@ -54,7 +54,7 @@ export default class Print extends Component {
                       event.target.blur();
                   }}
                   contentEditable="true"
-                  className="focus:shadow-outline focus:border-transparent outline-none px-1 -ml-1 rounded min-w-full font-bold text-2xl text-gray-900 border-b border-blue-500 border-dashed hover:bg-gray-400 whitespace-no-wrap flex"
+                  className="focus:ring focus:border-transparent outline-none px-1 -ml-1 rounded min-w-full font-bold text-2xl text-gray-900 border-b border-blue-500 border-dashed hover:bg-gray-400 whitespace-nowrap flex"
                   style={{ minWidth: '185px' }}
                   title="Edit title"
                 >

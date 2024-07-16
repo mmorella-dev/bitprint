@@ -106,7 +106,7 @@ export default class Header extends Component {
               'flex justify-between items-center flex-col md:flex-row w-full': true
             })}
           >
-            <h1 className="font-hairline text-2xl md:text-3xl mb-4 md:-mb-2 -m-1 flex items-center">
+            <h1 className="font-thin text-2xl md:text-3xl mb-4 md:-mb-2 -m-1 flex items-center">
               <PrintIcon className="h-6 mr-2 text-blue-500" />
               <span>BitPrint</span>
             </h1>
