@@ -10,7 +10,7 @@ console.info(process.env);
 
 const server = http.createServer((request, response) => {
   return handler(request, response, {
-    public: 'build'
+    public: 'dist'
   });
 });
 

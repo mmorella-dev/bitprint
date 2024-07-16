@@ -1,3 +1,2 @@
-server/build
-client/build
-client/public
+dist
+public
